@@ -31,18 +31,20 @@ const Sample = () => {
       <ul>
         <li>
           検証用のリンクをJSで動的に生成しているので、開発環境（SSR）でこのページを初めにアクセスするページ（エンドポイント）にした場合、ルーティングを解決できずにエラーになる。
-        </li>
-        <li>（ローカルでビルドした後なら問題なく動く）</li>
-        <li>
-          ランダムのリンクをcomponentにして、
-          <a
-            href="https://nextjs.org/docs/advanced-features/dynamic-import"
-            target="_blank"
-            rel="noreferrer"
-          >
-            dynamic import
-          </a>
-          でSSRを切る方法で解決。
+          <ul>
+            <li>ローカルでビルドした後なら問題なく動く。</li>
+            <li>
+              検証用のリンクをコンポーネントにして、
+              <a
+                href="https://nextjs.org/docs/advanced-features/dynamic-import"
+                target="_blank"
+                rel="noreferrer"
+              >
+                dynamic import
+              </a>
+              でSSRを切る方法で解決した。
+            </li>
+          </ul>
         </li>
       </ul>
     </Layout>
